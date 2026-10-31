@@ -8,7 +8,7 @@ export default function Hero() {
     >
       <div className="pointer-events-none absolute inset-0 z-0 bg-black/50" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-24 z-0 from-black/10 to-transparent" />
-      <div className="relative z-10 relative z-10 mx-6 max-w-3xl rounded-2xl border border-white/20 bg-black/75 p-8 text-left text-white shadow-2xl md:p-12">
+      <div className="relative z-10 text-center text-white px-4">
         <h1 className="font-serif text-5xl md:text-7xl sm:text-4xl leading-tight md:leading-tight">
           Modern Design
         </h1>
