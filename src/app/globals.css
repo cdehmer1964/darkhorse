@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #080b0f;
+  --foreground: #f7f3e9;
+
+  --dh-navy: #111827;
+  --dh-black: #080b0f;
+  --dh-panel: rgba(8, 11, 15, 0.88);
+  --dh-cream: #f7f3e9;
+  --dh-card: #ffffff;
+  --dh-text: #182033;
+  --dh-muted: #667085;
+  --dh-green: #2f8f46;
+  --dh-green-bright: #42ef75;
+  --dh-blue: #2d70b3;
+  --dh-orange: #d97706;
+  --dh-red: #e43d30;
+  --dh-border: #d5d9e2;
 }
 
 @theme inline {
@@ -12,15 +26,70 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  background: var(--dh-black);
 }
 
 body {
-  background: var(--background);
+  margin: 0;
+  background:
+    linear-gradient(rgba(8, 11, 15, 0.88), rgba(8, 11, 15, 0.94)),
+    url("/black-walnut-american-wood.webp") center top / cover fixed;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Keep all light cards readable */
+.bg-white,
+.bg-neutral-50 {
+  color: var(--dh-text);
+}
+
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white label,
+.bg-white select,
+.bg-white input,
+.bg-white textarea,
+.bg-white p {
+  color: var(--dh-text);
+}
+
+input,
+select,
+textarea {
+  color: var(--dh-text);
+  background: var(--dh-card);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #737b89;
+  opacity: 1;
+}
+
+a,
+button {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+button:active,
+a:active {
+  transform: translateY(1px);
+}
+
+::selection {
+  background: var(--dh-green-bright);
+  color: var(--dh-black);
 }
