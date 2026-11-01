@@ -85,7 +85,7 @@ export default async function ProjectPage({
   return (
     <article className="container mx-auto px-4 pb-20">
       {/* Pull hero up under fixed header (adjust the negative margin to match your header height) */}
-      <div className="-mt-[96px] mb-8">
+      <div className="mb-8">
         <PageHeader
           title={f.title}
           imageSrc={heroUrl ?? "/black-walnut-american-wood.webp"}

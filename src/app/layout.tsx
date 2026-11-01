@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} min-h-screen bg-white text-neutral-900 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} min-h-screen bg-[#0b1118] text-[#f7f3e9] antialiased`}
       >
         {/* Skip to content for keyboard/screen readers */}
         <a
@@ -69,7 +69,7 @@ export default function RootLayout({
         {/* Reserve space for the fixed header (with iOS notch safety) */}
         <main
           id="main"
-          className="pt-[96px] [padding-top:calc(96px+env(safe-area-inset-top))]"
+          className="pt-20 [padding-top:calc(80px+env(safe-area-inset-top))]"
         >
           {children}
         </main>

@@ -39,7 +39,7 @@ export default function PageHeader({
   const src = imageSrc ?? "/black-walnut-american-wood.webp";
 
   return (
-    <header className="-mt-[96px] mb-10">
+    <header className="-mt-20 mb-10">
       <div
         className="relative w-full overflow-hidden rounded-b-3xl
                    h-[26vh] min-h-[220px] sm:h-[32vh] sm:min-h-[260px] md:h-[36vh]"
@@ -47,7 +47,7 @@ export default function PageHeader({
         {/* Background image */}
         <Image
           src={src}
-          alt="Header background"
+          alt=""
           fill
           className="object-cover z-0"
           sizes="100vw"

@@ -3,25 +3,29 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative h-screen flex items-center justify-center bg-center bg-cover"
+      className="relative flex min-h-[calc(100svh-80px)] items-center overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: "url('/8Th-Street-03.jpg')" }}
     >
-      <div className="pointer-events-none absolute inset-0 z-0 bg-black/50" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 z-0 from-black/10 to-transparent" />
-      <div className="relative z-10 text-center text-white px-4">
-        <h1 className="font-serif text-5xl md:text-7xl sm:text-4xl leading-tight md:leading-tight">
-          Modern Design
-        </h1>
-        <h2 className="font-serif text-3xl md:text-4xl sm:text-xl font-normal -mt-1 opacity-90">
-          Timeless Craft
-        </h2>
-        {/* <p className="text-lg md:text-xl mb-8 opacity-90 font-serif">Modern Design, Timeless Craft</p> */}
-        <Link
-          href="/gallery"
-          className="inline-block border rounded-md px-6 py-2 mt-4 text-sm text-white border-white/70 hover:bg-white hover:text-neutral-900 transition"
-        >
-          View Our Work
-        </Link>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/30 to-black/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20" />
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 md:px-10 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-[#65d57a] md:text-base">
+            Custom cabinetry · Atlanta, Georgia
+          </p>
+          <h1 className="font-serif text-5xl font-semibold leading-[0.98] text-white drop-shadow-lg sm:text-6xl md:text-7xl lg:text-8xl">
+            Modern Design.
+            <span className="mt-2 block text-[#f5efe2]">Timeless Craft.</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90 md:text-xl">
+            Thoughtfully designed and carefully built cabinetry for distinctive homes and spaces.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/gallery" className="dh-button dh-button-primary">View Our Work</Link>
+            <Link href="/contact" className="dh-button dh-button-secondary">Start a Conversation</Link>
+          </div>
+        </div>
       </div>
     </section>
   );
