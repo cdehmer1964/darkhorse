@@ -47,7 +47,7 @@ export default function BlogCard({ post }: { post: BlogPostEntry }) {
 
   return (
     <article
-      className="group relative overflow-hidden rounded-2xl ring-1 ring-black/5 bg-white transition
+      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#fffdf8] text-[#182033] shadow-xl transition
                  hover:shadow-md focus-within:shadow-md"
     >
       <div className="relative h-56 w-full">

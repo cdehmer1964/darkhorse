@@ -12,15 +12,15 @@ export default async function Home() {
       </div>
       {/* Featured Projects */}
 
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-serif text-center">Featured Projects</h2>
+      <section className="container mx-auto px-4 py-14 md:py-16">
+        <p className="dh-section-kicker">Selected work</p>
+        <h2 className="dh-section-title">Featured Projects</h2>
         <ProjectGrid projects={featuredProejcts} />
       </section>
-      <section className="bg-gray-50 py-20">
+      <section className="bg-[#f5efe2] py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif text-center">
-            Learn More About Us
-          </h2>
+          <p className="mb-2 text-center text-xs font-bold uppercase tracking-[0.2em] text-[#2f8f46]">The people and process</p>
+          <h2 className="text-3xl font-serif text-center text-[#182033] md:text-4xl">Learn More About Us</h2>
           <HomeTriptych />
         </div>
       </section>

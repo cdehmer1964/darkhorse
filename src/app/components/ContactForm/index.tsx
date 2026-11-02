@@ -20,7 +20,7 @@ export default function ContactForm() {
       // IMPORTANT for Netlify Forms (v5 runtime):
       // post to "/__forms.html" with urlencoded body,
       // include a hidden "form-name" matching the form "name"
-      const res = await fetch("/__forms.html", {
+      const res = await fetch("/__forms", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(data as any).toString(),
@@ -37,7 +37,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl rounded-2xl bg-white p-6 ring-1 ring-black/5">
+    <div className="mx-auto max-w-2xl rounded-2xl border border-white/10 bg-[#fffdf8] p-6 text-[#182033] shadow-2xl">
       <h2 className="font-serif text-3xl tracking-tight">Let’s talk about your project</h2>
       <p className="mt-1 text-lg text-neutral-600">
         Tell us a bit about your space and goals. We’ll get back to you shortly.
@@ -112,7 +112,7 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className="flex items-center gap-3 pt-2">
+        <div className="flex flex-wrap items-center gap-3 pt-2" aria-live="polite">
           <button
             type="submit"
             disabled={status === "loading"}

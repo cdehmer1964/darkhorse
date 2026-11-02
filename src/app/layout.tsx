@@ -18,14 +18,14 @@ const playfair = Playfair_Display({
 
 // src/app/layout.tsx
 export const metadata = {
-  metadataBase: new URL("https://darkhorse-woodworks.netlify.app/"), // replace with your domain
+  metadataBase: new URL("https://darkhorse-woodworks-new.netlify.app/"), // replace with your domain
   title: "Dark Horse Woodworks",
-  description: "Modern design. Timeless craft.",
+  description: "Custom cabinetry and architectural woodwork, designed and built in Atlanta, Georgia.",
   openGraph: {
     type: "website",
     url: "/",
     title: "Dark Horse Woodworks",
-    description: "Modern design. Timeless craft.",
+    description: "Custom cabinetry and architectural woodwork, designed and built in Atlanta, Georgia.",
     images: [
       {
         url: "/logo.png", // <- logo as preview
@@ -38,7 +38,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dark Horse Woodworks",
-    description: "Modern design. Timeless craft.",
+    description: "Custom cabinetry and architectural woodwork, designed and built in Atlanta, Georgia.",
     images: ["/logo.png"],
   },
   icons: {

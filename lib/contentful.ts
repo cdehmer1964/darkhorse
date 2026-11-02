@@ -44,7 +44,6 @@ export async function getFeaturedProjects(limit = { limit: 12 }) {
 
   try {
     const res = await contentful.getEntries(query);
-    console.log("Ressss: ", res);
     return res.items;
   } catch (err) {
     console.error("Error fetching featured projects:", err);

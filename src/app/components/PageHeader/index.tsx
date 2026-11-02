@@ -68,7 +68,7 @@ export default function PageHeader({
 
         {/* Text + translucent card */}
         <div className="absolute bottom-6 left-6 md:left-10 max-w-2xl w-[90%] sm:w-[70%] z-30">
-          <div className="rounded-xl bg-neutral-900/70 backdrop-blur-md ring-1 ring-white/15 p-5 sm:p-6 text-white shadow-lg relative z-30">
+          <div className="rounded-xl border-l-4 border-[#2f8f46] bg-[#0b1118]/82 backdrop-blur-md ring-1 ring-white/15 p-5 sm:p-6 text-white shadow-lg relative z-30">
             {showBackButton && (
               <Link
                 href={backHref}
@@ -78,7 +78,7 @@ export default function PageHeader({
               </Link>
             )}
 
-            <h1 className="font-serif text-4xl md:text-6xl tracking-tight">
+            <h1 className="font-serif text-4xl md:text-5xl tracking-tight">
               {title}
             </h1>
 

@@ -26,8 +26,9 @@ html { background: var(--dh-navy); scroll-behavior: smooth; }
 body { margin: 0; background: var(--dh-navy); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
 main, article { min-height: 60vh; }
 
-.bg-white, .bg-neutral-50 { color: var(--dh-text); }
-.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white label, .bg-white select, .bg-white input, .bg-white textarea, .bg-white p { color: var(--dh-text); }
+.bg-white, .bg-neutral-50, .bg-gray-50 { color: var(--dh-text); }
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4,
+.bg-white label, .bg-white select, .bg-white input, .bg-white textarea, .bg-white p { color: var(--dh-text); }
 input, select, textarea { color: var(--dh-text); background: white; }
 input::placeholder, textarea::placeholder { color: #737b89; opacity: 1; }
 
@@ -43,6 +44,14 @@ button:active, a:active { transform: translateY(1px); }
 .dh-button-primary:hover { background: #26763a; }
 .dh-button-secondary { border: 1px solid rgb(255 255 255 / .65); background: rgb(11 17 24 / .45); color: white; backdrop-filter: blur(6px); }
 .dh-button-secondary:hover { background: white; color: var(--dh-navy); }
-
-/* Customer-facing cards keep the clean office-page readability. */
+.dh-section-title { font-family: var(--font-serif); font-size: clamp(2rem,4vw,3rem); color: var(--dh-cream); text-align: center; }
+.dh-section-kicker { margin-bottom: .5rem; text-align: center; color: var(--dh-green-bright); font-size: .75rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 .rounded-xl.bg-white, .rounded-2xl.bg-white { box-shadow: 0 16px 40px rgb(0 0 0 / .22); }
+.prose { color: rgb(255 255 255 / .82); }
+.prose h1, .prose h2, .prose h3, .prose h4, .prose strong { color: var(--dh-cream); }
+.prose a { color: var(--dh-green-bright); }
+.prose blockquote { color: rgb(255 255 255 / .8); border-color: var(--dh-green); }
+
+@media (max-width: 640px) {
+  .dh-button { width: 100%; }
+}
